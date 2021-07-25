@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		085969CD26AD1ADD00B62841 /* BaseFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 085969CB26AD1ADD00B62841 /* BaseFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		085969D726AD1BBF00B62841 /* Sequence+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085969D626AD1BBF00B62841 /* Sequence+Sort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		085969C826AD1ADD00B62841 /* BaseFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaseFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		085969CB26AD1ADD00B62841 /* BaseFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseFramework.h; sourceTree = "<group>"; };
 		085969CC26AD1ADD00B62841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		085969D626AD1BBF00B62841 /* Sequence+Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Sort.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +48,35 @@
 		085969CA26AD1ADD00B62841 /* BaseFramework */ = {
 			isa = PBXGroup;
 			children = (
+				085969D526AD1B3400B62841 /* Collection */,
+				085969D426AD1B1000B62841 /* Number */,
+				085969D326AD1AFC00B62841 /* Network */,
 				085969CB26AD1ADD00B62841 /* BaseFramework.h */,
 				085969CC26AD1ADD00B62841 /* Info.plist */,
 			);
 			path = BaseFramework;
+			sourceTree = "<group>";
+		};
+		085969D326AD1AFC00B62841 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		085969D426AD1B1000B62841 /* Number */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Number;
+			sourceTree = "<group>";
+		};
+		085969D526AD1B3400B62841 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				085969D626AD1BBF00B62841 /* Sequence+Sort.swift */,
+			);
+			path = Collection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +121,7 @@
 				TargetAttributes = {
 					085969C726AD1ADD00B62841 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -130,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				085969D726AD1BBF00B62841 /* Sequence+Sort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +290,7 @@
 		085969D126AD1ADD00B62841 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QLZW4HGC9F;
@@ -277,6 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = global.novum.BaseFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +316,7 @@
 		085969D226AD1ADD00B62841 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QLZW4HGC9F;
